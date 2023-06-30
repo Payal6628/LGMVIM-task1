@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffabab 0%, #ffddbb 100%);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #ffabab 0%, #ffddbb 100%);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of the CSS code remains the same */
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input[type="text"],
+.add-task select {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-task input[type="text"]:focus,
+.add-task select:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background-color: #ff6f69;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #ff4d4a;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section {
+  flex: 1 1 50%;
+}
+
+.section h2 {
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.tasks {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task .title {
+  flex: 1;
+  font-size: 18px;
+}
+
+.task .priority {
+  margin-left: 10px;
+  padding: 6px 10px;
+  background-color: #ffd700;
+  color: #333;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.tasks .completed-task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.tasks .task-actions {
+  margin-left: auto;
+}
+
+.tasks .task-actions button {
+  background-color: transparent;
+  border: none;
+  color: #ff6f69;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tasks .task-actions button:hover {
+  color: #ff4d4a;
+}
+
+#refresh-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #ff6f69;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#refresh-button:hover {
+  background-color: #ff4d4a;
+}
